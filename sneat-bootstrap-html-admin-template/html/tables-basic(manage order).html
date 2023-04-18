@@ -184,17 +184,7 @@
 
             <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
               <!-- Search -->
-              <div class="navbar-nav align-items-center">
-                <div class="nav-item d-flex align-items-center">
-                  <i class="bx bx-search fs-4 lh-0"></i>
-                  <input
-                    type="text"
-                    class="form-control border-0 shadow-none"
-                    placeholder="Search..."
-                    aria-label="Search..."
-                  />
-                </div>
-              </div>
+              
               <!-- /Search -->
 
               <ul class="navbar-nav flex-row align-items-center ms-auto">
@@ -272,10 +262,37 @@
 
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Tables /</span> Basic Tables</h4>
-
+              <ul class="nav nav-pills flex-column flex-md-row mb-3">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-primary dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    FILTER
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="javascript:void(0);">ID</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">User_Id</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Coupon_Id</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Payment_Id</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Status</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Create_at</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Update_at</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Complete_at</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Delivery_time</a></li>
+                  </ul>
+                </div>
+                <form class="d-flex " onsubmit="return false">
+                  <input class="mx-2 form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                  <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+              </ul>
               <!-- Basic Bootstrap Table -->
               <div class="card">
                 <h5 class="card-header">Table Basic</h5>
+                
                 <div class="table-responsive text-nowrap">
                   <table class="table">
                     <thead>
@@ -291,12 +308,11 @@
                         <th>Complete_at</th>
                         <th>Delivery_time</th>
                         <td>Action</td>
-
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
                       <tr>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>PRODUCT12</strong></td>
+                        <td><strong>PRODUCT12</strong></td>
                         <td>USER12</td>
                         <td>COUPON12</td>
                         <td>PAYMENT12</td>
@@ -323,7 +339,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>PRODUCT12</strong></td>
+                        <td><strong>PRODUCT12</strong></td>
                         <td>USER12</td>
                         <td>COUPON12</td>
                         <td>PAYMENT12</td>
@@ -350,7 +366,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>PRODUCT12</strong></td>
+                        <td><strong>PRODUCT12</strong></td>
                         <td>USER12</td>
                         <td>COUPON12</td>
                         <td>PAYMENT12</td>
