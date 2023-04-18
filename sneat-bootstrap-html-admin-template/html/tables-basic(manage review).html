@@ -183,6 +183,10 @@
             </div>
 
             <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <!-- Search -->
+              
+              <!-- /Search -->
+
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
                 
@@ -269,13 +273,11 @@
                     FILTER
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="javascript:void(0);">Product_id/a></li>
-                    <li><a class="dropdown-item" href="javascript:void(0);">Product_name</a></li>
-                    <li><a class="dropdown-item" href="javascript:void(0);">Description</a></li>
-                    <li><a class="dropdown-item" href="javascript:void(0);">Category_id</a></li>
-                    <li><a class="dropdown-item" href="javascript:void(0);">Price</a></li>
-                    <li><a class="dropdown-item" href="javascript:void(0);">Quantity</a></li>
-                    <li><a class="dropdown-item" href="javascript:void(0);">Sold</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Id</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Product_Id</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Rating</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Title</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Content</a></li>
                     <li><a class="dropdown-item" href="javascript:void(0);">isDeleted</a></li>
                     <li><a class="dropdown-item" href="javascript:void(0);">Create_at</a></li>
                     <li><a class="dropdown-item" href="javascript:void(0);">Update_at</a></li>
@@ -285,10 +287,8 @@
                   <input class="mx-2 form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                   <button class="btn btn-outline-primary" type="submit">Search</button>
                 </form>
-                <button type="button" class="btn btn-primary mx-2">Add Product</button>
+                
               </ul>
-              
-
               <!-- Basic Bootstrap Table -->
               <div class="card">
                 <h5 class="card-header">Table Basic</h5>
@@ -296,30 +296,24 @@
                   <table class="table">
                     <thead>
                       <tr>
-                        <th>Product_id</th>
-                        <th>Product_name</th>
-                        <th>Description</th>
-                        <th>Category_id</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Sold</th>
+                        <th>Id</th>
+                        <th>Product_Id</th>
+                        <th>Rating</th>
+                        <th>Title</th>
+                        <th>Content</th>
                         <th>isDeleted</th>
                         <th>Create_at</th>
                         <th>Update_at</th>
-                        <td>Action</td>
-
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
                       <tr>
-                        <td><strong>PRODUCT12</strong></td>
-                        <td>ITALIAN L SHAPE SOFA</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</td>
-                        <td>CATEGORY12</td>
-                        <td>$45.00</td>
-                        <td>4</td>
-                        <td>20</td>
-                        <td>available</td>
+                        <td> <strong>REVIEW12</strong></td>
+                        <td>PRODUCT12</td>
+                        <td>5</td>
+                        <td>Review product</td>
+                        <td>Lorem ipsum, dolor sit amet, consectetur, adipiscing elit</td>
+                        <td>isAvailable</td>
                         <td>12/12/2020</td>
                         <td>12/12/2020</td>
                         <td>
@@ -341,14 +335,12 @@
 
                       
                       <tr>
-                        <td> <strong>PRODUCT12</strong></td>
-                        <td>ITALIAN L SHAPE SOFA</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</td>
-                        <td>CATEGORY12</td>
-                        <td>$45.00</td>
-                        <td>4</td>
-                        <td>20</td>
-                        <td>available</td>
+                        <td> <strong>REVIEW12</strong></td>
+                        <td>PRODUCT12</td>
+                        <td>5</td>
+                        <td>Review product</td>
+                        <td>Lorem ipsum, dolor sit amet, consectetur, adipiscing elit</td>
+                        <td>isAvailable</td>
                         <td>12/12/2020</td>
                         <td>12/12/2020</td>
                         <td>
@@ -368,122 +360,12 @@
                         </td>
                       </tr>
                       <tr>
-                        <td> <strong>PRODUCT12</strong></td>
-                        <td>ITALIAN L SHAPE SOFA</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</td>
-                        <td>CATEGORY12</td>
-                        <td>$45.00</td>
-                        <td>4</td>
-                        <td>20</td>
-                        <td>available</td>
-                        <td>12/12/2020</td>
-                        <td>12/12/2020</td>
-                        <td>
-                          <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-trash me-1"></i> Delete</a
-                              >
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <div class="card mt-3">
-                <h5 class="card-header">New Product In 30 Days</h5>
-                <div class="table-responsive text-nowrap">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>Product_id</th>
-                        <th>Product_name</th>
-                        <th>Description</th>
-                        <th>Category_id</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Sold</th>
-                        <th>isDeleted</th>
-                        <th>Create_at</th>
-                        <th>Update_at</th>
-                        <td>Action</td>
-
-                      </tr>
-                    </thead>
-                    <tbody class="table-border-bottom-0">
-                      <tr>
-                        <td><strong>PRODUCT12</strong></td>
-                        <td>ITALIAN L SHAPE SOFA</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</td>
-                        <td>CATEGORY12</td>
-                        <td>$45.00</td>
-                        <td>4</td>
-                        <td>20</td>
-                        <td>available</td>
-                        <td>12/12/2020</td>
-                        <td>12/12/2020</td>
-                        <td>
-                          <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-trash me-1"></i> Delete</a
-                              >
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-
-                      
-                      <tr>
-                        <td> <strong>PRODUCT12</strong></td>
-                        <td>ITALIAN L SHAPE SOFA</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</td>
-                        <td>CATEGORY12</td>
-                        <td>$45.00</td>
-                        <td>4</td>
-                        <td>20</td>
-                        <td>available</td>
-                        <td>12/12/2020</td>
-                        <td>12/12/2020</td>
-                        <td>
-                          <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-trash me-1"></i> Delete</a
-                              >
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td> <strong>PRODUCT12</strong></td>
-                        <td>ITALIAN L SHAPE SOFA</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</td>
-                        <td>CATEGORY12</td>
-                        <td>$45.00</td>
-                        <td>4</td>
-                        <td>20</td>
-                        <td>available</td>
+                        <td> <strong>REVIEW12</strong></td>
+                        <td>PRODUCT12</td>
+                        <td>5</td>
+                        <td>Review product</td>
+                        <td>Lorem ipsum, dolor sit amet, consectetur, adipiscing elit</td>
+                        <td>isAvailable</td>
                         <td>12/12/2020</td>
                         <td>12/12/2020</td>
                         <td>
